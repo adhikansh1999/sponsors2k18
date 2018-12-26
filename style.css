@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800|Roboto:500');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&text=Sponsors:Spring%20Fest');
+/*  background-image: linear-gradient(to bottom right, red, yellow);
+*/
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
@@ -14,14 +19,43 @@ a {
   color: #abe188 !important; }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h3{
   font-weight: 700;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #F4976C;
+  /*color: #170849;*/
+}
 
+h4{
+  font-weight: 700;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #F4976C;
+  /*color: #170849;*/
+}
+h5{
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font size: 2em;
+}
+h6{
+  font-weight: 400;
+  font-family: 'Great Vibes', Helvetica, Arial, cursive;
+  font-size: 5vh;
+}
+h2{
+  font-weight: 700;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  color: black;  
+}
+/*for details of heads*/
+span{
+  color :white;
+}
+/*for phone no of heads*/
+.text-muted a{
+  color: white;
+}
 section {
   padding: 100px 0; }
   section h2.section-heading {
@@ -74,6 +108,13 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: #abe188; }
+
+/*keeps navbar static and */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+}  
 
 #mainNav {
   background-color: #212529; }
@@ -151,7 +192,12 @@ header.masthead {
   text-align: center;
   color: #333;
   /*background-image: url("../img/header-bg.png");*/
-  background: #fcf9db;
+  /*background: #fcf9db;*/
+  /*background-image: linear-gradient(to bottom right, #311A43, #d68e85);*/
+  /*background-image: linear-gradient(to bottom right, #170849, #d68e85);*/
+  /*background-image: linear-gradient(to bottom right, #C7D8C6, #efd9c1);*/
+    background-image: linear-gradient(to bottom right, #CDA34F, #e9e7da);
+
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -586,9 +632,8 @@ footer {
 	color:#45b3e0;
 }
 .img-fluid{
-	padding:0px;
+	padding:1.5em;
 }
-
 .navbar .dropdown-menu a:hover {
     color: #616161 !important;
 }
