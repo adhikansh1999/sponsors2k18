@@ -28,13 +28,13 @@ Also titleId in spons_list corresponds to the relaevant title not order_no
       $this->order_no = $order_no;
     }
 
-    public static function find($year) {
+    public static function find($title_id,$year) {
       $db = Db::getInstance();
 
       $year = intval($year);
 
-      $req = $db->prepare('SELECT * FROM spons_list WHERE year = :year ORDER BY title_id');
-      $req->execute(array('year' => $year));
+      $req = $db->prepare('SELECT * FROM spons_list WHERE title_id=:title_id  AND year = :year ORDER BY order_no');
+      $req->execute(array(':title_id'=>$title_id,'year' => $year));
       
 
       foreach($req->fetchAll() as $product) {
@@ -69,10 +69,9 @@ Also titleId in spons_list corresponds to the relaevant title not order_no
 
       $year = intval($year);
 
-      $req = $db->prepare('SELECT * FROM spons_title WHERE year = :year');
-      $req->execute(array('year' => $year));
+      $req = $db->prepare('SELECT * FROM spons_title WHERE year = :year ORDER by order_no');
+      $req->execute(array(':year' => $year));
       
-
       foreach($req->fetchAll() as $titles) {
         $list[] = new titles($titles['id'], $titles['title'], $titles['number'], $titles['sizeTitle'], $titles['year'], $titles['order_no']);
       }
@@ -88,18 +87,12 @@ Also titleId in spons_list corresponds to the relaevant title not order_no
 <?php
 	echo "<h1 style = 'font-size: 7vw;'>". $_POST['year']."</h1>";
 
+  // $test = Product::find($_POST['year']);
+  $heading_list = titles::find($_POST['year']);
+  // $it = 0;
 
-  $test = Product::find($_POST['year']);
-  $heading = titles::find($_POST['year']);
-  $it = 0;
-
-  // // foreach ($heading as $hd) 
-  // // {
-  // 	echo '<br><h1>'.$heading[0]->title.'</h1>';
-  // 	echo '<br><h1>'.$heading[1]->title.'</h1>';
-  // // }
-  $temp = -1;
-  foreach ($test as $data) 
+  // $temp = -1;
+  /*foreach ($test as $data) 
   {
   		if($data->title_id != $temp)
   		{
@@ -119,6 +112,28 @@ Also titleId in spons_list corresponds to the relaevant title not order_no
 		}
 		echo '</div>';
 		$temp = $data->title_id;
+  }*/
+
+
+  foreach ($heading_list as $title) 
+  {
+    $spons_list[$title->id]=Product::find($title->id,$_POST['year']);
   }
-  // if the link is empty put sf website in place of the original using the $_GLOBAL[''] variable
+
+  foreach ($heading_list as $title) 
+  {
+    echo '<br><h1>'.$title->title.'</h1>';
+    foreach ($spons_list[$title->id] as $data) 
+    {
+      echo '<div class="col-md-4 col-sm-6 portfolio-item" style="margin:auto;">
+              <a href="'.$data->link_web.'">
+                <img class = "img-fluid" src="'.$data->link_img.'"  alt = "'.$data->name.'">
+              </a>
+            ';
+      if($data->sub_title != ''){
+        echo '<p class="text-muted">'.$data->sub_title.'</p>';
+      }
+      echo '</div>';
+    }
+  }
 ?>

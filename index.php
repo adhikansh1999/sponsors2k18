@@ -1,5 +1,3 @@
-<!-- the bluish color of the main website is 	#170849 -->
-<!-- cowboy theme color is #FAA66A -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +9,8 @@
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css'>
+  
+  <link href="./sponsors_files/sf_logo.png" rel="icon" type="image/x-icon">
   	
 
 	<!-- Custom styles for this template -->
@@ -21,10 +21,7 @@
 </head>
 
 <body id="page-top">		
-	<!-- blue color is background-color: #170849 -->
-    <!-- Navigation Bar  -->
-    <!-- <nav class="mb-4 navbar navbar-expand-lg navbar-dark purple lighten-1"> -->
-    <nav class="mb-0 navbar navbar-expand-lg navbar-dark lighten-1" id= "navbar" style="background-color: #A9B7c0;
+    <nav class="mb-0 navbar navbar-expand-lg navbar-dark lighten-1" id= "navbar" style="background-color: #7e6336;
     padding-bottom: 0px;">
                         <a class="navbar-brand js-scroll-trigger" href="https://springfest.in/sponsors/#page-top"><img src="./sponsors_files/sf_logo.png" width="46vh"></a>
 
@@ -76,7 +73,6 @@
       <div class="container">
                     <div class="row block">
           <img src="./sponsors_files/logo2.png" style="width: 75vw; padding-bottom: 1.5em	;">
-          <!-- <img src="./sponsors_files/logo2.png" style="width: 15vw;"> -->
 
           </div>
             <div class="row team-members">
@@ -202,24 +198,25 @@
         <div class="row">
           
       </div>
-         <div class="page-content links">
+         <div class="page-content links" style="color: #f8f9fa">
 -        <div class="social">
--          <span><a class="social_icons" target="_blank" href="http://www.facebook.com/springfest.iitkgp"><img src="./img/facebook.svg" width="40" class="social_img"/></a></span>
--          <span><a class="social_icons" target="_blank" href="https://twitter.com/springfest_kgp"><img src="./img/twitter.svg" width="40" class="social_img"/></a></span>
--          <span><a class="social_icons" target="_blank" href="https://www.instagram.com/iitkgp.springfest/"><img src="./img/instagram.svg" width="40" class="social_img"/></a></span>
--          <span><a class="social_icons" target="_blank" href="https://www.youtube.com/user/SpringFestForever"><img src="./img/youtube.svg" width="40" class="social_img"/></a></span>
--          <span><a class="social_icons" target="_blank" href="https://plus.google.com/+SpringfestIn/"><img src="./img/google-plus.svg" width="40" class="social_img"/></a></span>
--          <span><a class="social_icons" target="_blank" href="https://www.linkedin.com/company/spring-fest/"><img src="./img/linkedin.svg" width="40" class="social_img"/></a></span>
+-          <span><a class="social_icons" target="_blank" href="http://www.facebook.com/springfest.iitkgp"><img src="./sponsors_files/img/facebook.svg" width="40" class="social_img"/></a></span>
+-          <span><a class="social_icons" target="_blank" href="https://twitter.com/springfest_kgp"><img src="./sponsors_files/img/twitter.svg" width="40" class="social_img"/></a></span>
+-          <span><a class="social_icons" target="_blank" href="https://www.instagram.com/iitkgp.springfest/"><img src="./sponsors_files/img/instagram.svg" width="40" class="social_img"/></a></span>
+-          <span><a class="social_icons" target="_blank" href="https://www.youtube.com/user/SpringFestForever"><img src="./sponsors_files/img/youtube.svg" width="40" class="social_img"/></a></span>
+-          <span><a class="social_icons" target="_blank" href="https://plus.google.com/+SpringfestIn/"><img src="./sponsors_files/img/google-plus.svg" width="40" class="social_img"/></a></span>
+-          <span><a class="social_icons" target="_blank" href="https://www.linkedin.com/company/spring-fest/"><img src="./sponsors_files/img/linkedin.svg" width="40" class="social_img"/></a></span>
 -        </div>
 -      </div>
 		</div>
     </footer>
 
+
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js'></script>
 	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js'></script>
-
+  <script src="script.js"></script>
 	<script>
 			function changeyear(year){
 			$.ajax({

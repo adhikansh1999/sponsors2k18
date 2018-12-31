@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800|Roboto:500');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes&text=Sponsors:Spring%20Fest');
-/*  background-image: linear-gradient(to bottom right, red, yellow);
-*/
+
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
@@ -22,26 +21,39 @@ h1,
 h3{
   font-weight: 700;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #F4976C;
-  /*color: #170849;*/
+  /*color: #F4976C;*/
+  color: #f19f4d;
 }
-
+/*for the names of the heads*/
 h4{
   font-weight: 700;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #F4976C;
-  /*color: #170849;*/
+  /*color: #F4976C;*/
+  /*color: #a27f46;*/
+  color : #7e6336;
 }
 h5{
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 700;
-    font size: 2em;
+    /*font size: 2em;*/
 }
 h6{
   font-weight: 400;
   font-family: 'Great Vibes', Helvetica, Arial, cursive;
-  font-size: 5vh;
+  font-size: 3vw;
 }
+@media screen and (min-width: 601px) {
+  h6 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h6 {
+    font-size: 25px;
+  }
+}
+
 h2{
   font-weight: 700;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
