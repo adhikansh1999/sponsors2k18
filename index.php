@@ -30,7 +30,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent-5">
-                    <ul class="navbar-nav mr-auto">
+                    <!-- <ul class="navbar-nav mr-auto"> -->
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
                     	<li class="nav-item">
 			              <a class="nav-link js-scroll-trigger" onclick="changeyear(2019);">
 			              <i class="fa fa-calendar"></i>2019</a>
@@ -85,9 +86,10 @@
             <div class="row no-flex">
               <div class="col-sm-4 col-6">
                 <div class="team-member">
+                  <img src="sponsors_files/img/Shreyash Gupta.jpg">
                   <h4>Shreyash <br> Gupta</h4>
                   <p class="text-muted" style="margin-bottom: 0"><a href="mailto:marketing@springfest.in"><span class="__cf_email__" data-cfemail="492a2128203d28273028092426262d2067263b2e"> marketing@springfest.in</span></a></p>
-                  <p class="text-muted" style="margin-bottom: 0"><a href="tel:+918879443797">+91-7355538163</a></p> 
+                  <p class="text-muted" style="margin-bottom: 0"><a href="tel:+917355538163">+91-7355538163</a></p> 
                   <ul class="list-inline social-buttons">
                     <li class="list-inline-item">
                       <a href="https://www.facebook.com/shreyash.gupta.3557">
@@ -104,9 +106,10 @@
               </div>
               <div class="col-sm-4 col-6">
                 <div class="team-member">
+                  <img src="sponsors_files/img/Hritik Khetan.jpg">
                   <h4>Hritik <br> Khetan</h4>
                   <p class="text-muted" style="margin-bottom: 0"><a href="mailto:marketing@springfest.in"><span class="__cf_email__" data-cfemail="c8a0a9babba088a5a7a7aca1e6a7baaf"> marketing@springfest.in</span></a></p>
-                  <p class="text-muted" style="margin-bottom: 0"><a href="tel:+918879443797">+91-8094935179</a></p>
+                  <p class="text-muted" style="margin-bottom: 0"><a href="tel:+918094935179">+918094935179</a></p>
                   <ul class="list-inline social-buttons">
                     <li class="list-inline-item">
                       <a href="https://www.facebook.com/hritik.khetan.7">
@@ -123,9 +126,11 @@
               </div>
               <div class="col-sm-4 col-6">
                 <div class="team-member">
+
+                  <img src="sponsors_files/img/Shreyansh Shah.jpg">
                   <h4>Shreyansh<br> Shah</h4>
                   <p class="text-muted" style="margin-bottom: 0"><a href="mailto:marketing@springfest.in"><span class="__cf_email__" data-cfemail="a5d6c4cbcec0d1e5c8cacac1cc8bcad7c2"> marketing@springfest.in</span></a></p>
-                  <p class="text-muted" style="margin-bottom: 0"><a href="tel:+918879443797">+91-9674624120</a></p>
+                  <p class="text-muted" style="margin-bottom: 0"><a href="tel:+919674624120">+91-9674624120</a></p>
                   <ul class="list-inline social-buttons">
                     <li class="list-inline-item">
                       <a href="https://www.facebook.com/shreyanshshah22">
@@ -142,9 +147,11 @@
               </div>
 			  <div class="col-sm-4 offset-sm-2 col-6">
                 <div class="team-member">
+
+                  <img src="sponsors_files/img/Nishi Bajaj.jpg">
                   <h4>Nishi <br> Bajaj</h4>
                   <p class="text-muted" style="margin-bottom: 0"><a href="mailto:marketing@springfest.in"><span class="__cf_email__" data-cfemail="a5d6c4cbcec0d1e5c8cacac1cc8bcad7c2"> marketing@springfest.in</span></a></p>
-                  <p class="text-muted" style="margin-bottom: 0"><a href="tel:+918879443797">+91-7477738111</a></p>
+                  <p class="text-muted" style="margin-bottom: 0"><a href="tel:+917477738111">+91-7477738111</a></p>
                   <ul class="list-inline social-buttons">
                     <li class="list-inline-item">
                       <a href="https://www.facebook.com/nishi.bajaj.9">
@@ -162,9 +169,11 @@
 
            <div class="col-sm-4 col-6 offset-3 offset-sm-0">
                 <div class="team-member">
+
+                  <img src="sponsors_files/img/Vitthal Agarwal.jpg">
                   <h4>Vitthal <br> Agarwal</h4>
                   <p class="text-muted" style="margin-bottom: 0"><a href="mailto:marketing@springfest.in"><span class="__cf_email__" data-cfemail="a5d6c4cbcec0d1e5c8cacac1cc8bcad7c2"> marketing@springfest.in</span></a></p>
-                  <p class="text-muted" style="margin-bottom: 0"><a href="tel:+918879443797">+91-7427933888</a></p>
+                  <p class="text-muted" style="margin-bottom: 0"><a href="tel:+917427933888">+91-7427933888</a></p>
                   <ul class="list-inline social-buttons">
                     <li class="list-inline-item">
                       <a href="https://www.facebook.com/vitthal.agarwal">
