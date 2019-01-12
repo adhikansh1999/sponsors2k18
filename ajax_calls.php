@@ -1,11 +1,6 @@
 <?php
 	require_once('connection.php');
 
-/*
-problems in sponsor_title database: the numbers are all wrong
-Also titleId in spons_list corresponds to the relaevant title not order_no
-
-*/
   class Product {
     
     public $sno;
@@ -36,7 +31,7 @@ Also titleId in spons_list corresponds to the relaevant title not order_no
       $req = $db->prepare('SELECT * FROM spons_list WHERE title_id=:title_id  AND year = :year ORDER BY order_no');
       $req->execute(array(':title_id'=>$title_id,'year' => $year));
       
-
+      $list = [];
       foreach($req->fetchAll() as $product) {
         $list[] = new product($product['sno'], $product['sub_title'], $product['name'], $product['link_img'], $product['link_web'], $product['title_id'],$product['year'], $product['order_no']);
       }
@@ -87,32 +82,8 @@ Also titleId in spons_list corresponds to the relaevant title not order_no
 <?php
 	echo "<h1 style = 'font-size: 7vw;'>". $_POST['year']."</h1>";
 
-  // $test = Product::find($_POST['year']);
   $heading_list = titles::find($_POST['year']);
-  // $it = 0;
-
-  // $temp = -1;
-  /*foreach ($test as $data) 
-  {
-  		if($data->title_id != $temp)
-  		{
-  			echo '<br><h1>'.$heading[$it]->title.'</h1>';
-  			$it = $it + 1;
-  		}
-  		 
-		echo 
-		'<div class="col-md-4 col-sm-6 portfolio-item" style="margin:auto;">
-		<a href="'.$data->link_web.'">
-			<img class = "img-fluid" src="'.$data->link_img.'"  alt = "'.$data->name.'">
-		</a>
-		';
-		if($data->sub_title != '')
-		{
-		 	echo '<p class="text-muted">'.$data->sub_title.'</p>';
-		}
-		echo '</div>';
-		$temp = $data->title_id;
-  }*/
+  $triple_grouping = array("EVENT SPONSORS","EVENT SPONSOR","ONLINE MEDIA PARTNERS","ONLINE MEDIA PARTNER","MAGAZINE PARTNER","MAGAZINE PARTNERS","EVENT ASSOCIATIONS","EVENT ASSOCIATION","GIFT PARTNERS","GIFT PARTNER");
 
 
   foreach ($heading_list as $title) 
@@ -122,18 +93,49 @@ Also titleId in spons_list corresponds to the relaevant title not order_no
 
   foreach ($heading_list as $title) 
   {
-    echo '<br><h1>'.$title->title.'</h1>';
-    foreach ($spons_list[$title->id] as $data) 
+    echo '<div class ="row"><div class = "col-12 text-center"><br><h1>'.$title->title.'</h1></div></div>';
+    if(in_array($title->title, $triple_grouping))
     {
-      echo '<div class="col-md-4 col-sm-6 portfolio-item" style="margin:auto;">
-              <a href="'.$data->link_web.'">
-                <img class = "img-fluid" src="'.$data->link_img.'"  alt = "'.$data->name.'">
-              </a>
-            ';
-      if($data->sub_title != ''){
-        echo '<p class="text-muted">'.$data->sub_title.'</p>';
+      // echo '<div class ="row">3 in a row</div>';
+      $it = 0;
+      foreach ($spons_list[$title->id] as $data) 
+      {
+        if($it%3 == 0){
+        echo '<div class = "row">';}
+        echo '  <div class="col-4" style= "margin:auto;">
+                <a href="'.$data->link_web.'">
+                  <img class = "img-fluid" src="'.$data->link_img.'"  alt = "'.$data->name.'">
+                </a>
+              ';
+        if($data->sub_title != ''){
+          echo '<p class="text-muted">'.$data->sub_title.'</p>';
+        }
+        echo '</div>';
+
+        if($it%3 == 2){
+        echo '</div>';
+        }
+        $it = $it + 1;
       }
-      echo '</div>';
+      if($it%3 != 0)
+      {
+        echo '</div>';
+      }
+
+    }
+    else{
+      foreach ($spons_list[$title->id] as $data) 
+      {
+        echo '<div class ="row"><div class="col-md-4 col-md-offset-4 text-center" style="margin:auto;">
+                <a href="'.$data->link_web.'">
+                  <img class = "img-fluid" src="'.$data->link_img.'"  alt = "'.$data->name.'">
+                </a>
+              ';
+        if($data->sub_title != ''){
+          echo '<p class="text-muted">'.$data->sub_title.'</p>';
+        }
+        echo '</div></div>';
+      }
     }
   }
 ?>

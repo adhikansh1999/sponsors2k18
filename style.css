@@ -578,10 +578,10 @@ ul.social-buttons {
   text-align: center; 
 }
 .team-member img 
-{
+{/*
   width: 225px;
-  height: 225px;
-  /*border: 7px solid #fff; */
+  height: 225px;*/
+  border: 7px solid #fff; 
   border-radius: 50%;
 }
 .team-member h4 {
@@ -649,7 +649,8 @@ footer {
 	color:#45b3e0;
 }
 .img-fluid{
-	padding:1.5em;
+	/*padding:1.5em;*/
+  padding:1.5em;
 }
 .navbar .dropdown-menu a:hover {
     color: #616161 !important;
@@ -658,3 +659,23 @@ footer {
     color: #ffffff;
 }
 
+/*
+.col-md-4 img{
+  width: 80%;
+}
+
+.col-sm-12{
+  width:40%;
+  tesxt-align: center;
+}
+*/
+
+.col-md-offset-4 img{
+  /*width :30vw;*/
+  width :100%;
+}
+
+.col-4 img{
+  width :28vw;
+  /*width: 100%;*/
+}

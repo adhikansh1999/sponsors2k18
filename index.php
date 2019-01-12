@@ -86,7 +86,7 @@
             <div class="row no-flex">
               <div class="col-sm-4 col-6">
                 <div class="team-member">
-                  <img src="sponsors_files/img/Shreyash Gupta.jpg">
+                  <img src="sponsors_files/img/Shreyash Gupta.jpg" style="padding-bottom: 0px;">
                   <h4>Shreyash <br> Gupta</h4>
                   <p class="text-muted" style="margin-bottom: 0"><a href="mailto:marketing@springfest.in"><span class="__cf_email__" data-cfemail="492a2128203d28273028092426262d2067263b2e"> marketing@springfest.in</span></a></p>
                   <p class="text-muted" style="margin-bottom: 0"><a href="tel:+917355538163">+91-7355538163</a></p> 
@@ -106,7 +106,7 @@
               </div>
               <div class="col-sm-4 col-6">
                 <div class="team-member">
-                  <img src="sponsors_files/img/Hritik Khetan.jpg">
+                  <img src="sponsors_files/img/Hritik Khetan.jpg" style="padding-bottom: 0px;">
                   <h4>Hritik <br> Khetan</h4>
                   <p class="text-muted" style="margin-bottom: 0"><a href="mailto:marketing@springfest.in"><span class="__cf_email__" data-cfemail="c8a0a9babba088a5a7a7aca1e6a7baaf"> marketing@springfest.in</span></a></p>
                   <p class="text-muted" style="margin-bottom: 0"><a href="tel:+918094935179">+918094935179</a></p>
@@ -127,7 +127,7 @@
               <div class="col-sm-4 col-6">
                 <div class="team-member">
 
-                  <img src="sponsors_files/img/Shreyansh Shah.jpg">
+                  <img src="sponsors_files/img/Shreyansh Shah.jpg" style="padding-bottom: 0px;">
                   <h4>Shreyansh<br> Shah</h4>
                   <p class="text-muted" style="margin-bottom: 0"><a href="mailto:marketing@springfest.in"><span class="__cf_email__" data-cfemail="a5d6c4cbcec0d1e5c8cacac1cc8bcad7c2"> marketing@springfest.in</span></a></p>
                   <p class="text-muted" style="margin-bottom: 0"><a href="tel:+919674624120">+91-9674624120</a></p>
@@ -148,7 +148,7 @@
 			  <div class="col-sm-4 offset-sm-2 col-6">
                 <div class="team-member">
 
-                  <img src="sponsors_files/img/Nishi Bajaj.jpg">
+                  <img src="sponsors_files/img/Nishi Bajaj.jpg" style="padding-bottom: 0px;">
                   <h4>Nishi <br> Bajaj</h4>
                   <p class="text-muted" style="margin-bottom: 0"><a href="mailto:marketing@springfest.in"><span class="__cf_email__" data-cfemail="a5d6c4cbcec0d1e5c8cacac1cc8bcad7c2"> marketing@springfest.in</span></a></p>
                   <p class="text-muted" style="margin-bottom: 0"><a href="tel:+917477738111">+91-7477738111</a></p>
@@ -170,7 +170,7 @@
            <div class="col-sm-4 col-6 offset-3 offset-sm-0">
                 <div class="team-member">
 
-                  <img src="sponsors_files/img/Vitthal Agarwal.jpg">
+                  <img src="sponsors_files/img/Vitthal Agarwal.jpg" style="padding-bottom: 0px;">
                   <h4>Vitthal <br> Agarwal</h4>
                   <p class="text-muted" style="margin-bottom: 0"><a href="mailto:marketing@springfest.in"><span class="__cf_email__" data-cfemail="a5d6c4cbcec0d1e5c8cacac1cc8bcad7c2"> marketing@springfest.in</span></a></p>
                   <p class="text-muted" style="margin-bottom: 0"><a href="tel:+917427933888">+91-7427933888</a></p>
