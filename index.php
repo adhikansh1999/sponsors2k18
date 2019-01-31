@@ -73,7 +73,7 @@
     <header class="masthead">
       <div class="container">
                     <div class="row block">
-          <img src="./sponsors_files/logo2.png" style="width: 75vw; padding-bottom: 1.5em	;">
+          <img src="./sponsors_files/logo2.png" style="width: 90vw;height: auto; padding-bottom: 1.5em; margin-left: -10%;;">
 
           </div>
             <div class="row team-members">
